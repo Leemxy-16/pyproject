@@ -1,3 +1,4 @@
+#a program that collect expense amd also check budget
 budget = int(input("Enter your total budget: "))
 expense = {}
 total = 0
@@ -24,3 +25,4 @@ elif (budget > total):
 else:
     print(
         f"You have exactly met your budget of ${budget}. Your total expenses are ${total}.")
+>>>>>>> d03e48048e32dc0bb94f4961294f44f6395fee83
