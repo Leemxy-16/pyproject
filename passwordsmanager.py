@@ -14,8 +14,8 @@ class credential :
 cred = credential("whatsapp", "test_hack" , "hkg$%&")
 cred2 = credential("github", "lermxy16","huoh$$_7>€")
 cred3 = credential("facebook", "hadiza aliyu" , "%&$565667")
-cred4 = credential("microsoft","saadiya abdullahi","0852 drawer12")
-cred5 = credential("linux","leemxy","085200")
+cred4 = credential("microsoft","Saabdullahi","drawer")
+cred5 = credential("linux","leemxy","##ssool")
 #vault that store cred
 
 vault = []
