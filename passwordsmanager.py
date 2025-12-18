@@ -1,11 +1,11 @@
 class credential :
     
 
-    def __init__(self, title, usr, paswd):
+    def __init__(self, title, usr, passphrase):
         
         self.title = title
         self.username= usr
-        self.password = paswd
+        self.password = passphrase
 
     def getinfo(self) :
         output= f" (\n{self.title} \nusername:{self.username} \npassword : {self.password}"
