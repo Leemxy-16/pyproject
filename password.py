@@ -1,7 +1,7 @@
 class credential :
     
 
-    def __init__(self, title, usr, paswd):
+    def __init__(self, title, usr, passphrase):
         self.title = title
         self.username= usr
         self.password = passphrase
