@@ -1,22 +1,28 @@
 #a program that collect expense amd also check budget
-budget = int(input('enter your budget make it a number'))
-expenses = {}
+budget = int(input("Enter your total budget: "))
+expense = {}
 total = 0
-answer = 'new'
+answer = ' new'
 
 while answer != 'stop':
-    name = input('enter your expense name')
-    amount = int(input('enter the amount of your expenses'))
-    total += amount
-    expenses[name]= amount
-    answer= input('enter stop to exist and new to continue')
+    item = input("Enter the expense item: ")
+    cost = float(input(f"Enter the cost for {item}: "))
+    expense[item] = cost
+    total += cost
+    answer = input(
+        "Type 'stop' to finish or press Enter to add another expense: ").lower()
 
-for x in expenses:
-    print(f'{x} amount : {expenses[x]}')
-
-print(f' your total expenses is ${total}')
+for i in expense.items():
+    print(f"The cost of {i[0]} is {i[1]}")
+print(f"Your total expenses amount to: {total}")
 
 if (budget < total):
-    print(f'you are above your ${budget} bugdet, \n you are too broke to be spending those money')
+    print(
+        f"You have exceeded your ${budget}. Your total expenses are ${total}.")
+elif (budget > total):
+    print(
+        f"You are within your budget of ${budget}. Your total expenses are ${total}.")
 else:
-    print(f'you are within your ${budget}')
+    print(
+        f"You have exactly met your budget of ${budget}. Your total expenses are ${total}.")
+>>>>>>> d03e48048e32dc0bb94f4961294f44f6395fee83
